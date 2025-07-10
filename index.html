@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ursinho pra tu 🫶🏾</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffeaf4;
+      font-family: 'Courier New', monospace;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .pixel-bear {
+      image-rendering: pixelated;
+      width: 280px; /* aumentei o tamanho */
+      height: auto;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #aa336a;
+      text-shadow: 0 1px 2px #fff;
+    }
+  </style>
+</head>
+<body>
+  <img src="bear_pixel.png" alt="Ursinho fofo" class="pixel-bear" />
+  <div class="message">um ursinho pra tu!!</div>
+</body>
+</html>
